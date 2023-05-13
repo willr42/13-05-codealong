@@ -1,5 +1,6 @@
 import { useContext } from 'react';
-import { UserAuthContext } from '../contexts/UserAuthContext';
+import { UserAuthContext } from './contexts/UserAuthContext';
+import './UserAuthForm.css';
 
 export default function UserAuthForm() {
   let userJwtCtx = useContext(UserAuthContext);
