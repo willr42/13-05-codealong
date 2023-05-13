@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { UserAuthContext } from './contexts/UserAuthContext';
+import { CtxExampleContext } from './contexts/CtxExampleContext';
 
 export default function CtxInfo() {
-  const userJwtCtx = useContext(UserAuthContext);
+  const userJwtCtx = useContext(CtxExampleContext);
   return (
     <div>
       <h1>Context Example</h1>

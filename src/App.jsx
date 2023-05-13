@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ContextExample from './contextExample/ContextExample';
+import PropDrillExample from './propDrillExample/PropDrillExample';
 import './App.css';
 
 function App() {

@@ -8,4 +8,6 @@
 .example {
   border: 5px black solid;
   padding: 25px;
+  margin-bottom: 10px;
+  min-width: 350px;
 }

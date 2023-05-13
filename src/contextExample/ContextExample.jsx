@@ -1,6 +1,6 @@
 import CtxInfo from './CtxInfo';
 import CtxForm from './CtxForm';
-import { CtxProvider } from './contexts/UserAuthContext';
+import { CtxProvider } from './contexts/CtxExampleContext';
 
 function ContextExample() {
   return (

@@ -1,14 +1,8 @@
-import { useContext } from 'react';
-import { CtxExampleContext } from './contexts/CtxExampleContext';
-import '../Form.css';
-
-export default function CtxForm() {
-  let userJwtCtx = useContext(CtxExampleContext);
-
+export default function PropDrillForm({ updateState }) {
   const submitFormData = (event) => {
     event.preventDefault();
     const jwtFormValue = event.target.elements.jwt.value;
-    userJwtCtx.updateJwt(jwtFormValue);
+    updateState(jwtFormValue);
   };
 
   return (
