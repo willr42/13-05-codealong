@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import ContextExample from './contextExample/ContextExample';
 import PropDrillExample from './propDrillExample/PropDrillExample';
+import ContextExample from './contextExample/ContextExample';
+import CompositionExample from './compositionExample/CompositionExample';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className='app'>
       <PropDrillExample currentState={propDrillState} updateState={setPropDrillState} />
       <ContextExample />
+      <CompositionExample />
     </div>
   );
 }
