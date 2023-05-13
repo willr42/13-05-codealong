@@ -13,7 +13,7 @@ function App() {
       <PropDrillExample currentState={propDrillState} updateState={setPropDrillState} />
       <ContextExample />
       <CompositionExample />
-      <hr style={{ width: '90vw' }}></hr>
+      <hr style={{ width: '90vw' }} />
 
       <BlogsProvider>
         <BlogsList></BlogsList>
