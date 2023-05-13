@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { UserAuthContext } from './contexts/UserAuthContext';
 import './UserAuthForm.css';
 
-export default function UserAuthForm() {
+export default function CtxForm() {
   let userJwtCtx = useContext(UserAuthContext);
 
   const submitFormData = (event) => {

@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { UserAuthContext } from './contexts/UserAuthContext';
 
-export default function UserAuthInfo() {
+export default function CtxInfo() {
   const userJwtCtx = useContext(UserAuthContext);
   return (
     <div>

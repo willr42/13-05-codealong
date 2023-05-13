@@ -1,15 +1,15 @@
 import { createContext, useState } from 'react';
 
-const UserAuthContext = createContext();
+const CtxExampleContext = createContext();
 
-function UserAuthProvider({ children }) {
+function CtxProvider({ children }) {
   const [jwt, setJwt] = useState('');
 
   return (
-    <UserAuthContext.Provider value={{ readJwt: jwt, updateJwt: setJwt }}>
+    <CtxExampleContext.Provider value={{ readJwt: jwt, updateJwt: setJwt }}>
       {children}
-    </UserAuthContext.Provider>
+    </CtxExampleContext.Provider>
   );
 }
 
-export { UserAuthContext, UserAuthProvider };
+export { CtxExampleContext, CtxProvider };

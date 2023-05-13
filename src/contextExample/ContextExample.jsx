@@ -1,14 +1,14 @@
-import UserAuthInfo from './CtxInfo';
-import UserAuthForm from './CtxForm';
-import { UserAuthProvider } from './contexts/UserAuthContext';
+import CtxInfo from './CtxInfo';
+import CtxForm from './CtxForm';
+import { CtxProvider } from './contexts/UserAuthContext';
 
 function ContextExample() {
   return (
     <div className='example'>
-      <UserAuthProvider>
-        <UserAuthInfo />
-        <UserAuthForm></UserAuthForm>
-      </UserAuthProvider>
+      <CtxProvider>
+        <CtxInfo />
+        <CtxForm></CtxForm>
+      </CtxProvider>
     </div>
   );
 }
