@@ -1,9 +1,8 @@
-import { useContext } from 'react';
-import { BlogDataContext, BlogDispatchContext } from './BlogsContextComponent';
+import { useBlogData, useBlogDispatch } from './BlogHooks';
 
 export default function BlogsList(props) {
-  const blogData = useContext(BlogDataContext);
-  const blogDispatch = useContext(BlogDispatchContext);
+  const blogData = useBlogData();
+  const blogDispatch = useBlogDispatch();
 
   return (
     <div>
