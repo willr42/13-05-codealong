@@ -4,3 +4,8 @@
   align-items: center;
   margin-top: 50px;
 }
+
+.example {
+  border: 5px black solid;
+  padding: 25px;
+}
