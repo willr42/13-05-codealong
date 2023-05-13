@@ -1,19 +1,14 @@
-import PropTypes from 'prop-types';
-import { createContext } from 'react';
-
-const defaultUserAuthInfo = {
-  jwt: '',
-};
+import { createContext, useState } from 'react';
 
 const UserAuthContext = createContext();
 
-UserAuthProvider.propTypes = {
-  children: PropTypes.node,
-};
-
 function UserAuthProvider({ children }) {
+  const [jwt, setJwt] = useState('');
+
   return (
-    <UserAuthContext.Provider value={defaultUserAuthInfo}>{children}</UserAuthContext.Provider>
+    <UserAuthContext.Provider value={{ readJwt: jwt, updateJwt: setJwt }}>
+      {children}
+    </UserAuthContext.Provider>
   );
 }
 
